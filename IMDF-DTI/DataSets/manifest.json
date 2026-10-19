@@ -1,0 +1,5 @@
+{
+  "DrugBank": {"sha256": "0fb6dba00e6f369e4fd28740135df306e521c4d0a661c6c3ee6cd02db41fabcd", "pairs": 33861, "positive": 16808, "negative": 17053, "held_out_retained": 6771},
+  "BIOSNAP": {"sha256": "936b9a456ae45636ac500047f93e5f5621f46ba39d106c7b8476a427272def8f", "pairs": 27451, "positive": 13822, "negative": 13629, "held_out_retained": 5489},
+  "Davis": {"sha256": "29b1a4cfab1cb80e85fcb65799d0265284bca43597a9f7a7d3d02ee9248e2840", "pairs": 25772, "positive": 7320, "negative": 18452, "held_out_retained": 5153}
+}

@@ -1,0 +1,40 @@
+# Environments, editor state, credentials, and Python caches
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Raw/licensed datasets and regenerated feature caches
+/DataSets/*.txt
+/DataSets/Preprocessed/*
+!/DataSets/Preprocessed/.gitkeep
+/torch_hub_cache/
+/cuda_cache/
+*.pkl
+*.pth
+*.pt
+*.npy
+*.npz
+
+# Training/evaluation artifacts: never publish by accident
+/DrugBank*/
+/BIOSNAP*/
+/Davis*/
+/BD2D*/
+/results/
+/logs/
+/log/
+/picture/
+/figures/
+/Cross_Val_Results/
+*.log
+*.zip
+*.ipynb

@@ -1,0 +1,14 @@
+# Install PyTorch and its matching PyG extensions first; see README.md.
+# Ranges are compatibility guidance, not a lockfile from the original server.
+numpy>=1.23,<2
+scipy>=1.10,<1.14
+torch-geometric>=2.4,<2.7
+joblib>=1.2
+prefetch_generator>=1.0.3
+scikit-learn>=1.2,<1.6
+tqdm>=4.64
+pandas>=1.5,<2.3
+fair-esm==2.0.0
+biopython>=1.80,<1.86
+rdkit>=2023.3
+matplotlib>=3.7,<3.10
