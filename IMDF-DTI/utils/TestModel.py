@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import os
 from tqdm import tqdm
 from prefetch_generator import BackgroundGenerator
+from sklearn.metrics import average_precision_score
 from sklearn.metrics import (accuracy_score, auc, precision_recall_curve,
                              precision_score, recall_score, roc_auc_score)
 
@@ -59,8 +60,7 @@ def test_IMDF_precess(MODEL, pbar, LOSS, DEVICE, FOLD_NUM):
     Precision = precision_score(Y, P, zero_division=0)
     Recall = recall_score(Y, P, zero_division=0)
     AUC = roc_auc_score(Y, S)
-    tpr, fpr, _ = precision_recall_curve(Y, S)
-    PRC = auc(fpr, tpr)
+    PRC = average_precision_score(Y, S)
     Accuracy = accuracy_score(Y, P)
     test_loss = np.average(test_losses)
 
